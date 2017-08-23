@@ -75,8 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		
 		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
+		
 		<code>application/controllers/Welcome.php</code>
 
 		
