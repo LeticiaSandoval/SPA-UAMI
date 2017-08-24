@@ -11,10 +11,13 @@ class Home extends CI_Controller
 		$this->load->view("/invitado/head",$data);
 		$this->load->view("/invitado/nav",$data);
 		$this->load->view("/invitado/header",$data);
-		$this->load->view("/invitado/content");
+		$result=$this->db->get('usuario');
+		$data  = array('consulta' =>  $result);
+		$this->load->view("invitado/content",$data);
 		$this->load->view("/invitado/footer");
 
 		$this->load->view("home",$data);
+
 	}
 }
 
