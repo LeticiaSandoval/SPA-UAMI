@@ -11,7 +11,8 @@ class Home extends CI_Controller
 		$this->load->view("/invitado/head",$data);
 		$this->load->view("/invitado/nav",$data);
 		$this->load->view("/invitado/header",$data);
-		$result=$this->db->get('usuario');
+		
+		$result=$this->usuario->getUsuario();
 		$data  = array('consulta' =>  $result);
 		$this->load->view("invitado/content",$data);
 		$this->load->view("/invitado/footer");

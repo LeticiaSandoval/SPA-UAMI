@@ -6,7 +6,7 @@
         <?php foreach ($consulta->result() as $fila){ 
         ?>
          <div class="post-preview">
-            <a href="post.html">
+            <a href="<?= base_url()?>article/usuario/<?= $fila->id_usuario?>">
               <h2 class="post-title">
                <?= $fila->email?>
               </h2>
@@ -18,7 +18,6 @@
           </div>
 
         <?php
-
 
         }
 
